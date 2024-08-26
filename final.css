@@ -1,0 +1,135 @@
+body {
+    background-image: url(/aaa/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 3em;
+    left: 6em;
+}
+
+header img {
+    width: 180px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer {
+    position: absolute;
+    top: 3em;
+    right: 6em;
+}
+
+.timer-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 15px solid #00ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 350;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.seconds, .remaining {
+    font-size: 0.5em; 
+}
+
+#time_left {
+    font-size: 3em;
+}
+
+/*############################################################################*/
+
+#quiz {
+    margin-bottom: 20px; 
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+
+label {
+    min-width: 25em;
+    display: block;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 2px solid transparent; 
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+label:hover {
+    background: linear-gradient(90deg, #900080, #D20094); 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.answers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.answer {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+/*############################################################################*/
+
+footer {
+    position: absolute;
+    bottom: 4em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer span {
+    color: #9C007C;
+}
